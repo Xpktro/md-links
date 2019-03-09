@@ -1,0 +1,23 @@
+{
+  "name": "md-links",
+  "version": "0.0.1-alpha",
+  "description": "Laboratoria md-links reference implementation",
+  "main": "build/md-links.js",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "start": "npm run build && node build/cli.js"
+  },
+  "author": "Moisés Cachay",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
+  "bin": {
+    "md-links": "build/cli.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4"
+  }
+}
